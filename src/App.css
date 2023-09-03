@@ -14,7 +14,11 @@
 
 body {
   font-family: var(--font-roboto);
-  background-color: #0D0D0D;
+  background-color: hsl(0, 0, 100);
+}
+
+.logo {
+  border-radius: 200%;
 }
 
 .app {
@@ -103,14 +107,12 @@ h1 {
 }
 
 .container {
-  width: 50%;
+  width: 300px;
+  height: 100px;
   margin-top: 3rem;
   margin-left: 10px;
   margin-right: 10px;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .movie {
@@ -228,3 +230,5 @@ h1 {
     margin: 1rem;
   }
 }
+
+.navbar {}
