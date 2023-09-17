@@ -1,9 +1,10 @@
 /* eslint-disable react/jsx-key */
-import './App.css'
+import './App.css';
 import { useState, useEffect } from 'react';
-import searchbar from "./searchbar.svg"
+import searchbar from "./searchbar.svg";
 import Moviecard from "./Moviecard.jsx";
-
+import logo from "./assets/logo.png";
+import Navbar from './Navbar';
 const API_URL = "http://www.omdbapi.com?apikey=232b3ad4"
 
 const App = () => {
@@ -23,8 +24,8 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>MovieLand</h1>
-
+      <Navbar />
+      <img className="logo" src={logo} />
       <div className="search">
         <input
           value={searchTerm}
